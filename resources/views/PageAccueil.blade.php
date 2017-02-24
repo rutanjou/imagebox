@@ -26,6 +26,7 @@
 	   }
 	   h1 {
 			padding-top: 2.7em;
+			margin-top: 0;
 	   }
 	   hr {
 	   	color : orange;
@@ -36,6 +37,19 @@
 	   	text-align: center;
 	   	margin : 2em;
 	   }
+	   a {
+	   	color : red;
+	   	font-size: 1.5em;
+	   
+	   }
+	   input {
+	   	padding-top: 2em;
+	   	margin-top: 3em;
+	   	margin : 3em;
+	   }
+		span{
+			padding-top: 10em;
+		}
 	</style>
 </head>
 <body>
@@ -46,22 +60,27 @@
 	<div id="flex">
 		<div>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
-				Ab veniam harum beatae doloremque ea numquam reprehenderit, <br>
-				fuga ad adipisci eum illum officiis, quidem, doloribus pariatur <br> nesciunt aspernatur voluptates. Tenetur, itaque.
+				Just resizing the choose image here after the url above and you will get want you want.
+				Enjoy! <br>
 			</p>
-			<input type="text"> <br>
-			Copier l'adresse du lien <br> 
-			<input type="text">
+			<a href="#">http://imagebox.mg/200/300</a> <br>
+			<span>Thanks to use imageBox. The better patner ever</span> <br>
+			<a href="#">http://imagebox.mg</a>
+			<div>
+				<input type="number" placeholder="Enter Width">		
+				<input type="number" placeholder="Enter Height">
+			</div>
 		</div>
 		<div>
-			<img src="{{$image}}" alt="paysage">
+			<!-- <img src="{{URL::asset('mesImages/photo2-32.jpeg')}}" alt="paysage"> -->
+		<img src="{{$image}}" alt="paysage">
 
 		</div>
 	</div>
+		
 	<hr>
 	<footer >
-		@Created By <strong>Christelle tsague</strong> & <strong>Ru TAN</strong>, Simplon.co
+		@Created By <strong>Christelle TSAGUE</strong> & <strong>Ru TAN</strong>, Simplon.co
 	</footer>	
 </body>
 </html>

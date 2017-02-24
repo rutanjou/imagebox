@@ -11,9 +11,26 @@
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function(){
     return view('PageAccueil');
 });
 Route::get('/','ControllerPageAccueil@getRandom');
 
 
+=======
+
+
+Route::get('/', function () {
+    return view('PageAccueil');
+});
+
+Route::get('/', 'ControllerPageAccueil@getRandom');
+
+// Route::get('/i/{w}/{h}', function($w,$h)
+// {
+//     $img = Image::make()->resize($w, $h);
+
+//     return $img->response('jpeg');
+// });
+>>>>>>> 192d73de52aa444a93374c66426411f9462f271c
