@@ -11,7 +11,7 @@
 |
 */
 
-<<<<<<< HEAD
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -19,11 +19,10 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('pageAccueil');
 });
-=======
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-Route::get('/', 'PageAccueilController@getIndex');
-Route::get('/show', 'ControllerPageAccueil@getShow');
 
->>>>>>> a7e933867ee84160de32f8cb70d3fb785ccad761
+Route::get('/300/200', function()
+{
+    $img = Image::make('mesImages/photo627-21.jpeg')->resize(300, 200);
+
+    return $img->response('jpeg');
+});

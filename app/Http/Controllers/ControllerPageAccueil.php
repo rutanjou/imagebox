@@ -4,15 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Images;
+use config/app.php;
 
 class ControllerPageAccueil extends Controller
 {
-	public function getIndex(){
-		$image = Images::all();
-		return view('PageAccueil', ['image'=>$image]);
-	}
-	public function getShow(){
-		$image = Images::all();
-		return view ('PageAccueil');
-	}
+    public function getIndex(){
+        return view('PageAccueil');
+    }
+    
 }
