@@ -14,12 +14,14 @@
 
 
 Route::get('/', function () {
-    return view('pageAccueil');
+    return view('PageAccueil');
 });
 
-Route::get('/i/{w}/{h}', function($w,$h)
-{
-    $img = Image::make()->resize($w, $h);
+Route::get('/', 'ControllerPageAccueil@getRandom');
 
-    return $img->response('jpeg');
-});
+// Route::get('/i/{w}/{h}', function($w,$h)
+// {
+//     $img = Image::make()->resize($w, $h);
+
+//     return $img->response('jpeg');
+// });

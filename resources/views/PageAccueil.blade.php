@@ -72,7 +72,9 @@
 			</div>
 		</div>
 		<div>
-			<img src="{{URL::asset('mesImages/photo2-32.jpeg')}}" alt="paysage">
+			<!-- <img src="{{URL::asset('mesImages/photo2-32.jpeg')}}" alt="paysage"> -->
+		<img src="{{$image}}" alt="paysage">
+
 		</div>
 	</div>
 		
