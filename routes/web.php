@@ -12,17 +12,14 @@
 */
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::get('/', function () {
     return view('pageAccueil');
 });
 
-Route::get('/300/200', function()
+Route::get('/i/{w}/{h}', function($w,$h)
 {
-    $img = Image::make('mesImages/photo627-21.jpeg')->resize(300, 200);
+    $img = Image::make()->resize($w, $h);
 
     return $img->response('jpeg');
 });

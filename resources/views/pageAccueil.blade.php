@@ -67,9 +67,9 @@
 			<span>Thanks to use imageBox. The better patner ever</span> <br>
 			<a href="#">http://imagebox.mg</a>
 			<div>
-		<input type="number" placeholder="Enter Width">		
-		<input type="number" placeholder="Enter Height">
-	</div>
+				<input type="number" placeholder="Enter Width">		
+				<input type="number" placeholder="Enter Height">
+			</div>
 		</div>
 		<div>
 			<img src="{{URL::asset('mesImages/photo2-32.jpeg')}}" alt="paysage">
